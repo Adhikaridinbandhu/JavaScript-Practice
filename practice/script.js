@@ -140,3 +140,30 @@
 //   console.log(sum);
 // }
 // sumEven(10);
+
+// print squares of 1 to 10.
+
+// function printSquare(num) {
+//   for (let i = 1; i <= num; i++) {
+//     console.log(i * i);
+//   }
+// }
+// printSquare(10);
+//  print first 10 fibonacci numbers.
+
+function printFibonacci(num) {
+  let n1 = 0,
+    n2 = 1,
+    nextTerm;
+
+  console.log(n1);
+  console.log(n2);
+
+  for (let i = 1; i <= num; i++) {
+    nextTerm = n1 + n2;
+    console.log(nextTerm);
+    n1 = n2;
+    n2 = nextTerm;
+  }
+}
+printFibonacci(8);
