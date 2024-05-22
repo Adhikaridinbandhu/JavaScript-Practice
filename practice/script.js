@@ -151,19 +151,45 @@
 // printSquare(10);
 //  print first 10 fibonacci numbers.
 
-function printFibonacci(num) {
-  let n1 = 0,
-    n2 = 1,
-    nextTerm;
+// function printFibonacci(num) {
+//   let n1 = 0,
+//     n2 = 1,
+//     nextTerm;
 
-  console.log(n1);
-  console.log(n2);
+//   console.log(n1);
+//   console.log(n2);
 
-  for (let i = 1; i <= num; i++) {
-    nextTerm = n1 + n2;
-    console.log(nextTerm);
-    n1 = n2;
-    n2 = nextTerm;
-  }
-}
-printFibonacci(8);
+//   for (let i = 1; i <= num; i++) {
+//     nextTerm = n1 + n2;
+//     console.log(nextTerm);
+//     n1 = n2;
+//     n2 = nextTerm;
+//   }
+// }
+// printFibonacci(8);
+
+//  sum  of odd  numbers.
+
+// function sumOdd(num) {
+//   let sum = 0;
+//   for (let i = 1; i <= num; i++) {
+//     if (i % 2 !== 0) {
+//       sum = sum + i;
+//     }
+//   }
+//   console.log(sum);
+// }
+// sumOdd(20);
+
+// sum of multiplies of 3
+
+// function sumMultipication(num) {
+//   let sum = 0;
+//   for (let i = 1; i <= 10; i++) {
+//     const result = i * num;
+//     sum = sum + result;
+//     console.log(`${num}* ${i}=${result}`);
+//   }
+//   console.log(sum);
+// }
+// sumMultipication(3);
