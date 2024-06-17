@@ -7,8 +7,8 @@
 // }
 
 // 2 even and odd
-// let number2 = 9;
-// if (number2 % 2 === 0) {
+// let number = 9;
+// if (number % 2 === 0) {
 //   console.log("Even");
 // } else {
 //   console.log("Odd");
@@ -193,3 +193,21 @@
 //   console.log(sum);
 // }
 // sumMultipication(3);
+
+//  print cubes
+
+// function printCube(num) {
+//   result = 0;
+//   for (let i = 1; i <= num; i++) {
+//     result = i * i * i;
+//     console.log(result);
+//   }
+// }
+// printCube(10);
+
+function gradeNum(score) {
+  if ((score) => 90) {
+    console.log("A");
+  }
+}
+gradeNum(92);
