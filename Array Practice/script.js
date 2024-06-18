@@ -2,13 +2,13 @@
 // let numbers = [10, 20, 30, 40, 50];
 // console.log(numbers);
 
-// Array Add  at last//
+//  Add element at last//
 
 // let vegetables = ["tomato", "potato", "onion", "cauliflower"];
 // vegetables.push("raddish", "pea");
 // console.log(vegetables);
 
-// Array remove at last//
+// Element remove form back//
 
 // let villagesGalyang = [
 //   "Dimik",
@@ -21,7 +21,7 @@
 // villagesGalyang.pop();
 // console.log(villagesGalyang);
 
-// Array remove at begining//
+// Element remove from begining//
 
 // let villagesGalyang = [
 //   "Hugi",
@@ -34,14 +34,14 @@
 // villagesGalyang.shift();
 // console.log(villagesGalyang);
 
-// Arry add at begining//
+// Element add at begining//
 
 // let vegetables = ["tomato", "potato", "onion", "cauliflower"];
 // vegetables.unshift("raddish", "pea");
 
 // console.log(vegetables);
 
-// Array remove//(4,1) means go to 4 and remove only 1 element.
+// Element remove//(4,1) means go to 4 and remove only 1 element.
 
 // let friends = ["Bipin", "Madhav", "Laxman", "Kamal", "Harkhe", "Gore"];
 // friends.splice(4, 1);
@@ -52,3 +52,34 @@
 // let dailyActivities = ["eat", "work", "sleep"];
 // dailyActivities[1] = "exercise";
 // console.log(dailyActivities);
+
+// 1.
+// let cars = ["Tesla", "BMW", "Kia", "Hundai", "Toyata"];
+// console.log(cars);
+
+// 2.
+// let cars = ["Tesla", "BMW", "Kia", "Hundai", "Toyata"];
+// cars.push("Tata", "Suzuki");
+// console.log(cars);
+
+// 3.
+// let cars = ["Tesla", "BMW", "Hundai", "Toyata"];
+// cars.unshift("Tata", "Suzuki");
+// console.log(cars);
+
+4;
+// let cars = ["Eicher", "Tesla", "BMW", "Kia", "Hundai", "Toyata"];
+// cars.shift();
+// console.log(cars);
+
+// 5;
+// let cars = ["Tesla", "BMW", "Kia", "Hundai", "Toyata", "Bajaj"];
+// cars.pop();
+// console.log(cars);
+
+// 6.
+// const arr1 = ["Juke", "Shyakhuri", "Dhaddu"];
+// const arr2 = ["Likhe", "Chari", "Jogi"];
+// const arr3 = ["Fuse", "Daine"];
+// const children = arr1.concat(arr2, arr3);
+// console.log(children);
