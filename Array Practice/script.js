@@ -67,12 +67,12 @@
 // cars.unshift("Tata", "Suzuki");
 // console.log(cars);
 
-4;
+// 4.
 // let cars = ["Eicher", "Tesla", "BMW", "Kia", "Hundai", "Toyata"];
 // cars.shift();
 // console.log(cars);
 
-// 5;
+// 5.
 // let cars = ["Tesla", "BMW", "Kia", "Hundai", "Toyata", "Bajaj"];
 // cars.pop();
 // console.log(cars);
@@ -83,3 +83,29 @@
 // const arr3 = ["Fuse", "Daine"];
 // const children = arr1.concat(arr2, arr3);
 // console.log(children);
+
+// 7.
+// let friends = ["Juke", "Shyakhure", "Dhaddu", "Likhe", "Chari"];
+// let removedFriends = friends.splice(1, 2);
+// console.log(friends);
+// console.log(removedFriends);
+
+// 8.
+// let friends = ["Juke", "Shyakhure", "Dhaddu", "Likhe", "Chari"];
+// friends.splice(1, 0, "Jogi");
+// console.log(friends);
+
+// 9.
+// let friends = ["Juke", "Shyakhure", "Dhaddu", "Likhe", "Chari"];
+// friends.splice(1, 2, "Jogi");
+// console.log(friends);
+
+// 10.
+// let fruitsString = "apple, banana";
+// let fruitsArray = fruitsString.split(",");
+// console.log(fruitsArray);
+
+// 11.
+// let fruits = ["Apple", "Banana"];
+// let fruitsString = fruits.join(",");
+// console.log(fruitsString);
