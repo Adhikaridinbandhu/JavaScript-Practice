@@ -15,3 +15,26 @@
 // }
 // const x = square(4);
 // console.log(x);
+
+// function printMahadev() {
+//   for (let i = 0; i < 10; i++) {
+//     console.log("Mahadev");
+//   }
+// }
+// printMahadev();
+
+// function msg(firstName) {
+//   function hey() {
+//     console.log("Hey" + firstName);
+//   }
+//   return hey();
+// }
+// msg("Ravi");
+
+// function msg(firstName) {
+//   function welcome() {
+//     console.log("Welcome" + firstName);
+//   }
+//   return welcome();
+// }
+// msg("Shiva");

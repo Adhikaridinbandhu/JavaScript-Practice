@@ -205,9 +205,9 @@
 // }
 // printCube(10);
 
-function gradeNum(score) {
-  if ((score) => 90) {
-    console.log("A");
-  }
-}
-gradeNum(92);
+// function gradeNum(score) {
+//   if ((score) => 90) {
+//     console.log("A");
+//   }
+// }
+// gradeNum(92);
