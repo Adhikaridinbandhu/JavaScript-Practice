@@ -109,3 +109,46 @@
 // let fruits = ["Apple", "Banana"];
 // let fruitsString = fruits.join(",");
 // console.log(fruitsString);
+
+// 12. Reverse
+// let array = [1, 2, 3, 4, 5];
+// function reverseArray(arr) {
+//   return arr.reverse();
+// }
+// console.log(reverseArray(array));
+
+// 13. Reduce
+// let array = [1, 2, 3, 4, 5];
+// function sumElements(arr) {
+//   return arr.reduce((acc, val) => acc + val, 0);
+// }
+// console.log(sumElements(array));
+
+// 14. Filter
+// let array = [1, 2, 3, 4, 5, 6];
+// function filterEven(arr) {
+//   return arr.filter((num) => num % 2 === 0);
+// }
+// console.log(filterEven(array));
+
+// 15;
+
+// let array = [1, 2, 2, 2, 3, 3, 3, 4];
+// function countOccurences(arr, element) {
+//   return arr.filter((x) => x === element).length;
+// }
+// console.log(countOccurences(array, 2));
+
+// 16. //map//
+// let array = [1, 2, 3, 4, 5, 6];
+// function multiplyElements(arr, multiplier) {
+//   return arr.map((num) => num * multiplier);
+// }
+// console.log(multiplyElements(array, 2));
+
+// 17. //MinMax//
+// let array = [1, 2, 3, 4, 5];
+// function findMinMax(arr) {
+//   return { min: Math.min(...arr), max: Math.max(...arr) };
+// }
+// console.log(findMinMax(array));
