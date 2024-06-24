@@ -38,3 +38,64 @@
 //   return welcome();
 // }
 // msg("Shiva");
+
+// const product = (num1, num2, num3, num4) => {
+//   console.log(num1 * num2 * num3 * num4);
+// };
+// for (let i = 5; i < 9; i++) {
+//   product(i, i + 5, i + 10, i + 15);
+// }
+// product();
+
+// const divideNum = () => {
+//   let a = 20;
+//   let b = 10;
+//   return a / b;
+// };
+// let result = divideNum();
+// console.log(result);
+
+// function declaration
+
+// function sum() {
+//   let addition = 0;
+//   let a = 5;
+//   let b = 6;
+//   addition = a + b;
+//   console.log(addition);
+// }
+// sum();
+
+// function expression
+
+// let addNumbers = function (a, b) {
+//   let sum = 0;
+//   sum = a + b;
+//   console.log(sum);
+// };
+// addNumbers(2, 3);
+// addNumbers(6, 5);
+
+// arrow function
+
+// const addTwoNums = (num1, num2) => {
+//   let sum = 0;
+//   sum = num1 + num2;
+//   return sum;
+// };
+// let result = addTwoNums(2, 3);
+// console.log(result);
+
+// let num1 = 5;
+// let num2 = 6;
+// console.log(addTwoNums(num1, num2));
+
+// arrow function
+
+// const add = () => {
+//   let a = 2;
+//   let b = 3;
+//   return a + b;
+// };
+// let sum = add();
+// console.log(sum);

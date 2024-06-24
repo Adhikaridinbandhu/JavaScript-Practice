@@ -211,3 +211,24 @@
 //   }
 // }
 // gradeNum(92);
+
+// let number = 5;
+// let stringNumber = number.toString();
+// {
+//   console.log(stringNumber);
+//   console.log(typeof stringNumber);
+// }
+// if (stringNumber !== 5) {
+//   console.log("Hello");
+// } else if (stringNumber === "5") {
+//   console.log("Hello World");
+// } else {
+//   console.log("It's Okay");
+// }
+
+function sumTwoNumbers(a, b) {
+  return a + b;
+}
+
+let result = sumTwoNumbers(5, 4);
+console.log(result);
