@@ -226,9 +226,9 @@
 //   console.log("It's Okay");
 // }
 
-function sumTwoNumbers(a, b) {
-  return a + b;
-}
+// function sumTwoNumbers(a, b) {
+//   return a + b;
+// }
 
-let result = sumTwoNumbers(5, 4);
-console.log(result);
+// let result = sumTwoNumbers(5, 4);
+// console.log(result);

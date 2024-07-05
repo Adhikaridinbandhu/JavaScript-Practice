@@ -99,3 +99,24 @@
 // };
 // let sum = add();
 // console.log(sum);
+
+// function printVowels(input) {
+//   input = input.toLowerCase();
+//   const vowels = "aeiou";
+
+//   for (let char of input) {
+//     if (vowels.includes(char)) {
+//       console.log(char);
+//     }
+//   }
+// }
+// printVowels("AEROPLANE");
+
+function printOddNum(num) {
+  for (let i = 0; i <= num; i++) {
+    if (i % 2 !== 0) {
+      console.log(i);
+    }
+  }
+}
+printOddNum(12);
