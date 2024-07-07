@@ -152,3 +152,33 @@
 //   return { min: Math.min(...arr), max: Math.max(...arr) };
 // }
 // console.log(findMinMax(array));
+
+// const printCars = (cars) => {
+//   for (let i = 0; i < cars.length; i++) {
+//     console.log(cars[i]);
+//   }
+// };
+// let cars = ["BMW", "Ferrari", "Audi", "Tesla"];
+// printCars(cars);
+
+// let array = [2, 4, 5];
+// const doubleNum = (arr) => {
+//   let numbers = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     numbers.push(arr[i] * 2);
+//   }
+//   console.log(numbers);
+// };
+// doubleNum(array);
+
+let cars = ["Audi", "BMW", "Tesla", "Ford", "Maruti"];
+let value = "BYD";
+
+const pushOnArray = (cars, value) => {
+  cars[cars.length] = value;
+  return cars.length;
+};
+
+let length = pushOnArray(cars, "BYD");
+console.log(length);
+console.log(cars);
