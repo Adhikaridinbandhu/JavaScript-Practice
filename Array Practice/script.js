@@ -171,14 +171,49 @@
 // };
 // doubleNum(array);
 
-let cars = ["Audi", "BMW", "Tesla", "Ford", "Maruti"];
-let value = "BYD";
+// let cars = ["Audi", "BMW", "Tesla", "Ford", "Maruti"];
+// let value = "BYD";
 
-const pushOnArray = (cars, value) => {
-  cars[cars.length] = value;
-  return cars.length;
-};
+// const pushOnArray = (cars, value) => {
+//   cars[cars.length] = value;
+//   return cars.length;
+// };
 
-let length = pushOnArray(cars, "BYD");
-console.log(length);
-console.log(cars);
+// let length = pushOnArray(cars, "BYD");
+// console.log(length);
+// console.log(cars);
+
+// let friends = ["Laxman", "Bijaya", "Shiva"];
+// const pushArray = (arr, value) => {
+//   arr[arr.length] = value;
+//   return arr.length;
+// };
+// let add = pushArray(friends, "Anil");
+// console.log(friends);
+
+// let friends = ["Laxman", "Bijay", "Shiva"];
+// const unshiftArray = (arr, value) => {
+//   friends[0] = value;
+//   return arr.length;
+// };
+// let addInFront = unshiftArray(friends, "Anil");
+// console.log(friends);
+// console.log(addInFront);
+
+// function add(...num) {
+//   console.log(num);
+// }
+// add(2, 3, 4);
+
+let arr = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+];
+let sum = 0;
+for (let i = 0; i < arr.length; i++) {
+  for (let j = 0; j < arr[i].length; j++) {
+    sum += arr[i][j];
+  }
+}
+console.log(sum);
