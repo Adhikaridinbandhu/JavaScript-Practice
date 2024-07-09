@@ -205,15 +205,64 @@
 // }
 // add(2, 3, 4);
 
-let arr = [
-  [1, 2, 3],
-  [4, 5, 6],
-  [7, 8, 9],
-];
-let sum = 0;
-for (let i = 0; i < arr.length; i++) {
-  for (let j = 0; j < arr[i].length; j++) {
-    sum += arr[i][j];
-  }
-}
-console.log(sum);
+// let arr = [
+//   [1, 2, 3],
+//   [4, 5, 6],
+//   [7, 8, 9],
+// ];
+// let sum = 0;
+// for (let i = 0; i < arr.length; i++) {
+//   for (let j = 0; j < arr[i].length; j++) {
+//     sum += arr[i][j];
+//   }
+// }
+// console.log(sum);
+
+// const findValue = (numbers) => {
+//   let sum = 0;
+//   for (let i = 0; i < numbers.length; i++) {
+//     sum = sum + numbers[i];
+//   }
+//   console.log(sum);
+//   return sum / numbers.length;
+// };
+// let avg = findValue([1, 2, 3, 4, 5]);
+// console.log(avg);
+
+//OR
+
+// const findValue = (num) => {
+//   let sum = 0;
+//   for (let i = 1; i <= num; i++) {
+//     sum = sum + i;
+//   }
+//   console.log(sum);
+//   let avg = sum / num;
+//   return avg;
+// };
+// const avg = findValue(5);
+// console.log(avg);
+
+// let arr = [1, 2, 3, 4, 5, 6];
+// let targetSum = 7;
+// let pairs = [];
+// for (let i = 0; i < arr.length; i++) {
+//   for (let j = i + 1; j < arr.length; j++) {
+//     if (arr[i] + arr[j] == targetSum) {
+//       pairs.push([arr[i], arr[j]]);
+//     }
+//   }
+// }
+// console.log(pairs);
+
+// const numInBetween = (arr) => {
+//   let newArray = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > 2 && arr[i] < 10) {
+//       newArray.push(arr[i]);
+//     }
+//   }
+//   return newArray;
+// };
+// const result = numInBetween([2, 4, 12, 1, 7]);
+// console.log(result);
