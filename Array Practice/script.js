@@ -266,3 +266,40 @@
 // };
 // const result = numInBetween([2, 4, 12, 1, 7]);
 // console.log(result);
+
+// function printStarPattern(num) {
+//   for (let i = 1; i <= num; i++) {
+//     let star = "";
+//     for (let j = 1; j <= i; j++) {
+//       star += "*";
+//     }
+//     console.log(star);
+//   }
+// }
+// printStarPattern(5);
+
+// find min num
+
+// const findMin = (arr) => {
+//   let min = arr[0];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] < min) min = arr[i];
+//   }
+//   return min;
+// };
+// let minNumber = findMin([5, 7, 15, 4, 8]);
+// console.log(minNumber);
+
+// find max num
+
+// const findMax = (arr) => {
+//   let max = arr[0];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > max) {
+//       max = arr[i];
+//     }
+//   }
+//   return max;
+// };
+// let maxNum = findMax([5, 7, 12, 10, 9]);
+// console.log(maxNum);
