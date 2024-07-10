@@ -40,3 +40,19 @@
 // let array = [4, 9, 16, 25, 36];
 // let resultSum = sumOfSquare(array);
 // console.log(resultSum);
+
+//removing duplicate
+
+function removeDuplicates(arr) {
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (newArr.indexOf(arr[i]) === -1) {
+      console.log(arr[i]);
+      newArr.push(arr[i]);
+    }
+  }
+  return newArr;
+}
+let array = [1, 2, 7, 3, 4, 4, 3, 2];
+let removedResult = removeDuplicates(array);
+console.log(removedResult);
