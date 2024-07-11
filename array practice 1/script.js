@@ -43,16 +43,31 @@
 
 //removing duplicate
 
-function removeDuplicates(arr) {
-  let newArr = [];
+// function removeDuplicates(arr) {
+//   let newArr = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (newArr.indexOf(arr[i]) === -1) {
+//       console.log(arr[i]);
+//       newArr.push(arr[i]);
+//     }
+//   }
+//   return newArr;
+// }
+// let array = [1, 2, 7, 3, 4, 4, 3, 2];
+// let removedResult = removeDuplicates(array);
+// console.log(removedResult);
+
+//sum of even
+
+const sumOfEven = (arr) => {
+  let sum = 0;
   for (let i = 0; i < arr.length; i++) {
-    if (newArr.indexOf(arr[i]) === -1) {
-      console.log(arr[i]);
-      newArr.push(arr[i]);
+    if (arr[i] % 2 == 0) {
+      sum = sum + arr[i];
     }
   }
-  return newArr;
-}
-let array = [1, 2, 7, 3, 4, 4, 3, 2];
-let removedResult = removeDuplicates(array);
-console.log(removedResult);
+  return sum;
+};
+let array = [2, 4, 5, 6, 8, 9];
+let resultSum = sumOfEven(array);
+console.log(resultSum);
