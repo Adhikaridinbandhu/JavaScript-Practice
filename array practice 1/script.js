@@ -59,15 +59,42 @@
 
 //sum of even
 
-const sumOfEven = (arr) => {
-  let sum = 0;
+// const sumOfEven = (arr) => {
+//   let sum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 == 0) {
+//       sum = sum + arr[i];
+//     }
+//   }
+//   return sum;
+// };
+// let array = [2, 4, 5, 6, 8, 9];
+// let resultSum = sumOfEven(array);
+// console.log(resultSum);
+
+//product of all elements
+
+// const productOfArray = (arr) => {
+//   let product = 1;
+
+//   for (let i = 0; i < arr.length; i++) {
+//     product = product * arr[i];
+//   }
+//   return product;
+// };
+// let array = [1, 2, 3, 4, 5, 6];
+// let resultProduct = productOfArray(array);
+// console.log(resultProduct);
+
+// count occurrence
+
+const countOccurrence = (arr, value) => {
+  let count = 0;
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i] % 2 == 0) {
-      sum = sum + arr[i];
+    if (arr[i] === value) {
+      count++;
     }
   }
-  return sum;
+  return count;
 };
-let array = [2, 4, 5, 6, 8, 9];
-let resultSum = sumOfEven(array);
-console.log(resultSum);
+console.log(countOccurrence([1, 2, 3, 2, 4, 2, 5], 2));
