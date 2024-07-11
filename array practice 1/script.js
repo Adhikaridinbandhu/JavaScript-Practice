@@ -88,13 +88,37 @@
 
 // count occurrence
 
-const countOccurrence = (arr, value) => {
-  let count = 0;
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] === value) {
-      count++;
+// const countOccurrence = (arr, value) => {
+//   let count = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === value) {
+//       count++;
+//     }
+//   }
+//   return count;
+// };
+// console.log(countOccurrence([1, 2, 3, 2, 4, 2, 5], 2));
+
+//prime number
+
+const primeNum = (num) => {
+  if (num <= 1) {
+    return false;
+  }
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % 2 === 0) {
+      return false;
     }
   }
-  return count;
+  return true;
 };
-console.log(countOccurrence([1, 2, 3, 2, 4, 2, 5], 2));
+function checkPrimeNum(arr) {
+  let prime = [];
+  for (let i = 0; i < arr.length; i++) {
+    prime.push(primeNum(arr[i]));
+  }
+  return prime;
+}
+let numbers = [1, 2, 3, 4, 5, 6, 7];
+let resultPrime = checkPrimeNum(numbers);
+console.log(resultPrime);
