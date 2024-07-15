@@ -25,3 +25,37 @@
 
 // let laptops = ["Lenovo", "Mac", "Dell", "Hp"];
 // console.log(laptops.reverse());
+
+// let vehicles = ["bus", "truck", "van", "car"];
+// let reversedResult = vehicles.reverse();
+// console.log(reversedResult);
+
+//string reverse
+
+const reverseString = (name) => {
+  let newStr = "";
+  for (let i = name.length - 1; i >= 0; i--) {
+    newStr = newStr + name[i];
+  }
+  return newStr;
+};
+let name = "bandhu";
+const reversedName = reverseString(name);
+console.log(reversedName);
+
+// or
+
+function reverseName(name) {
+  let nameArray = name.split("");
+  console.log(nameArray);
+  let reversedArray = nameArray.reverse();
+  console.log(reversedArray);
+  let joinName = reversedArray.join("");
+  console.log(joinName);
+}
+reverseName("bandhu");
+
+// or
+
+let text = "How are you?";
+console.log(text.split("").reverse().join(""));
