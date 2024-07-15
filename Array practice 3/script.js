@@ -85,3 +85,9 @@
 
 // let name = "Bandhu";
 // console.log(name.split("").reverse().join(""));
+
+let fruits = ["Banana", "Orange", "Apple", "Mango"];
+let text = fruits.join();
+console.log(text);
+
+let cars = [""];
