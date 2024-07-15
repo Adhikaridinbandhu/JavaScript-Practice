@@ -32,30 +32,30 @@
 
 //string reverse
 
-const reverseString = (name) => {
-  let newStr = "";
-  for (let i = name.length - 1; i >= 0; i--) {
-    newStr = newStr + name[i];
-  }
-  return newStr;
-};
-let name = "bandhu";
-const reversedName = reverseString(name);
-console.log(reversedName);
+// const reverseString = (name) => {
+//   let newStr = "";
+//   for (let i = name.length - 1; i >= 0; i--) {
+//     newStr = newStr + name[i];
+//   }
+//   return newStr;
+// };
+// let name = "bandhu";
+// const reversedName = reverseString(name);
+// console.log(reversedName);
 
-// or
+// // or
 
-function reverseName(name) {
-  let nameArray = name.split("");
-  console.log(nameArray);
-  let reversedArray = nameArray.reverse();
-  console.log(reversedArray);
-  let joinName = reversedArray.join("");
-  console.log(joinName);
-}
-reverseName("bandhu");
+// function reverseName(name) {
+//   let nameArray = name.split("");
+//   console.log(nameArray);
+//   let reversedArray = nameArray.reverse();
+//   console.log(reversedArray);
+//   let joinName = reversedArray.join("");
+//   console.log(joinName);
+// }
+// reverseName("bandhu");
 
-// or
+// // or
 
-let text = "How are you?";
-console.log(text.split("").reverse().join(""));
+// let text = "How are you?";
+// console.log(text.split("").reverse().join(""));

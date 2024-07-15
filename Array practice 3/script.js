@@ -90,4 +90,6 @@ let fruits = ["Banana", "Orange", "Apple", "Mango"];
 let text = fruits.join();
 console.log(text);
 
-let cars = [""];
+let cars = ["Tata", "Nissan", "Hundai", "Kia"];
+let carsString = cars.join("");
+console.log(carsString);
