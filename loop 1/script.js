@@ -84,3 +84,58 @@
 // };
 // let result = reverseArrStr(["cat", "dog", "cow"]);
 // console.log(result);
+
+// print muliplication table from 1 to 10.
+
+// const printMulTable = (num) => {
+//   for (let i = 1; i <= num; i++) {
+//     console.log(`Multiplication Table of ${i}`);
+//     for (let j = 1; j <= 10; j++) {
+//       console.log(`${i}*${j}=${i * j}`);
+//     }
+//   }
+// };
+// printMulTable(10);
+
+// Write a program that prints the multiplication table of a given number in an array and then prints the array.
+// const multiplicationTable = (num) => {
+//   let newArr = [];
+//   for (let i = 1; i <= 10; i++) {
+//     newArr.push(num * i);
+//   }
+//   return newArr;
+// };
+// let number = 5;
+// let result = multiplicationTable(number);
+// console.log(result);
+
+// Write a program that finds the largest product in the multipication tables from 1 to 10.
+
+// const findLargestProduct = (num) => {
+//   let newArr = [];
+
+//   for (let i = 1; i <= 10; i++) {
+//     newArr.push(num * i);
+//   }
+//   let largestProduct = newArr[0];
+//   for (let j = 1; j <= newArr.length - 1; j++) {
+//     if (newArr[j] > largestProduct) {
+//       largestProduct = newArr[j];
+//     }
+//   }
+//   return largestProduct;
+// };
+// console.log(findLargestProduct(3));
+
+// Or
+
+// let largestProduct = 0;
+// for (let i = 1; i <= 10; i++) {
+//   for (let j = 1; j <= 10; j++) {
+//     let product = i * j;
+//     if (product > largestProduct) {
+//       largestProduct = product;
+//     }
+//   }
+// }
+// console.log(largestProduct);
