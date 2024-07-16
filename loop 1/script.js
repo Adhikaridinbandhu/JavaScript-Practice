@@ -59,3 +59,28 @@
 
 // let text = "How are you?";
 // console.log(text.split("").reverse().join(""));
+
+// const reverseArrayElements = (animals) => {
+//   let newArr = animals.reverse();
+//   let newElements = [];
+//   for (let i = 0; i <= newArr.length - 1; i++) {
+//     let reversedStrArr = newArr[i].split("").reverse().join("");
+//     newElements.push(reversedStrArr);
+//   }
+//   return newElements;
+// };
+// let result = reverseArrayElements(["dog", "cat", "tiger"]);
+// console.log(result);
+
+// or
+
+// const reverseArrStr = (arr) => {
+//   let newArr = [];
+//   for (let i = arr.length - 1; i >= 0; i--) {
+//     let reversedArrayString = arr[i].split("").reverse().join("");
+//     newArr.push(reversedArrayString);
+//   }
+//   return newArr;
+// };
+// let result = reverseArrStr(["cat", "dog", "cow"]);
+// console.log(result);
