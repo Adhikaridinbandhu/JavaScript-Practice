@@ -115,3 +115,44 @@
 // let num = 5;
 // let cube = num * num * num;
 // console.log(cube);
+
+// // check the given number and return whether it is prime or not.
+
+// const isPrime = (num) => {
+//   if (num <= 1) {
+//     return false;
+//   }
+//   for (let i = 2; i <= Math.sqrt(num); i++) {
+//     if (num % i === 0) {
+//       return false;
+//     }
+//   }
+//   return true;
+// };
+// let number = 19;
+// let result = isPrime(number);
+// if (result) {
+//   console.log("Prime Number");
+// } else {
+//   console.log("Not a Prime Number");
+// }
+
+//Or //print all the prime nums form 1 to 20
+
+const isPrime = (num) => {
+  if (num <= 1) {
+    return false;
+  }
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+  return true;
+};
+
+for (let i = 1; i <= 20; i++) {
+  if (isPrime(i)) {
+    console.log(i);
+  }
+}
