@@ -62,11 +62,56 @@
 
 // Print the power of given num  for 5 times .
 
-function printPower(num) {
-  let power = 1;
-  for (let i = 1; i <= 5; i++) {
-    power = power * num;
-    console.log(power);
-  }
-}
-printPower(2);
+// function printPower(num) {
+//   let power = 1;
+//   for (let i = 1; i <= 5; i++) {
+//     power = power * num;
+//     console.log(power);
+//   }
+// }
+// printPower(2);
+
+// Take one string as a parameter and  print if the word is a palindrome or not.
+
+// function isPalindrome(str) {
+//   let rev = "";
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     rev = rev + str[i];
+//   }
+//   if (rev == str) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// let string = "racecar
+// // ";
+// let checkedPalindrome = isPalindrome(string);
+// if (checkedPalindrome) {
+//   console.log("The value is a palindrome.");
+// } else {
+//   console.log("The value isn't a palindrome.");
+// }
+
+// //print tree  from ['t', 'r', 'e', 'e]
+
+// let arr = ["t", "r", "e", "e"];
+// let joinString = arr.join("");
+// let string = joinString.charAt(0).toUpperCase() + joinString.slice(1);
+// console.log(string);
+
+// // print cube from 1 upto given num.
+// const printCube = (num) => {
+//   let cube = 0;
+//   for (let i = 1; i <= num; i++) {
+//     cube = i * i * i;
+//     console.log(cube);
+//   }
+// };
+// printCube(5);
+
+// // or, print the cube of given num.
+
+// let num = 5;
+// let cube = num * num * num;
+// console.log(cube);
