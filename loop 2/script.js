@@ -139,20 +139,68 @@
 
 //Or //print all the prime nums form 1 to 20
 
-const isPrime = (num) => {
-  if (num <= 1) {
-    return false;
-  }
-  for (let i = 2; i <= Math.sqrt(num); i++) {
-    if (num % i === 0) {
-      return false;
-    }
-  }
-  return true;
-};
+// const isPrime = (num) => {
+//   if (num <= 1) {
+//     return false;
+//   }
+//   for (let i = 2; i <= Math.sqrt(num); i++) {
+//     if (num % i === 0) {
+//       return false;
+//     }
+//   }
+//   return true;
+// };
 
-for (let i = 1; i <= 20; i++) {
-  if (isPrime(i)) {
-    console.log(i);
+// for (let i = 1; i <= 20; i++) {
+//   if (isPrime(i)) {
+//     console.log(i);
+//   }
+// }
+// Q. make ['02025', 'esroH', '4202'] from ["52020", "Horse", "2024", "Apple"]
+
+// const reverseElements = (arr) => {
+//   let newArr = [];
+//   for (let i = 0; i <= arr.length - 2; i++) {
+//     let reversed = arr[i].split("").reverse().join("");
+//     newArr.push(reversed);
+//   }
+//   return newArr;
+// };
+// let names = ["52020", "Horse", "2024", "Apple"];
+// let result = reverseElements(names);
+// console.log(result);
+
+// Q. make ['4202', 'esroH'] from ["52020", "Horse", "2024", "Apple"]
+
+// function reverseArrayElements(arr) {
+//   let reversedArr = [];
+//   for (let i = endingIndex; i >= startingIndex; i--) {
+//     let reversedString = arr[i].split("").reverse().join("");
+//     reversedArr.push(reversedString);
+//   }
+//   return reversedArr;
+// }
+// let elements = ["52020", "Horse", "2024", "Apple"];
+// let startingIndex = 1;
+// let endingIndex = elements.length - 2;
+// let resultReversed = reverseArrayElements(elements);
+// console.log(resultReversed);
+
+// Q. make ['el', '4', 'es', '02'] from ["52020", "Horse", "2024", "Apple"]
+
+const printReversed = (arr) => {
+  let reversedArr = arr.reverse();
+  let newArr = [];
+  for (let i = 0; i <= reversedArr.length - 1; i++) {
+    let reversedString = reversedArr[i].split("").reverse().join("");
+    let str = "";
+    for (j = 0; j < reversedArr[i].length - 3; j++) {
+      str = str + reversedString[j];
+    }
+    newArr.push(str);
   }
-}
+  return newArr;
+};
+let names = ["52020", "Horse", "2024", "Apple"];
+let result = printReversed(names);
+console.log(result);
