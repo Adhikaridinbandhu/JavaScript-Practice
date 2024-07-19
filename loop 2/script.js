@@ -188,19 +188,40 @@
 
 // Q. make ['el', '4', 'es', '02'] from ["52020", "Horse", "2024", "Apple"]
 
-const printReversed = (arr) => {
-  let reversedArr = arr.reverse();
-  let newArr = [];
-  for (let i = 0; i <= reversedArr.length - 1; i++) {
-    let reversedString = reversedArr[i].split("").reverse().join("");
-    let str = "";
-    for (j = 0; j < reversedArr[i].length - 3; j++) {
-      str = str + reversedString[j];
-    }
-    newArr.push(str);
-  }
-  return newArr;
-};
-let names = ["52020", "Horse", "2024", "Apple"];
-let result = printReversed(names);
-console.log(result);
+// const printReversed = (arr) => {
+//   let reversedArr = arr.reverse();
+//   let newArr = [];
+//   for (let i = 0; i <= reversedArr.length - 1; i++) {
+//     let reversedString = reversedArr[i].split("").reverse().join("");
+//     let str = "";
+//     for (j = 0; j < reversedArr[i].length - 3; j++) {
+//       str = str + reversedString[j];
+//     }
+//     newArr.push(str);
+//   }
+//   return newArr;
+// };
+// let names = ["52020", "Horse", "2024", "Apple"];
+// let result = printReversed(names);
+// console.log(result);
+
+// or //
+
+// const reverseArrayElements = (arr) => {
+//   let reversedArr = arr.reverse();
+//   let newArr = [];
+//   for (let i = firstIndex; i <= lastIndex; i++) {
+//     let element = arr[i];
+//     let elementArr = element.split("");
+//     let splicedArr = elementArr.splice(3);
+//     let reversedArray = splicedArr.reverse();
+//     let stringElement = reversedArray.join("");
+//     newArr.push(stringElement);
+//   }
+//   return newArr;
+// };
+// let names = ["52020", "Horse", "2024", "Apple"];
+// let firstIndex = 0;
+// let lastIndex = names.length - 1;
+// let result = reverseArrayElements(names);
+// console.log(result);
