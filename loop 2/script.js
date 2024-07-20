@@ -225,3 +225,19 @@
 // let lastIndex = names.length - 1;
 // let result = reverseArrayElements(names);
 // console.log(result);
+
+// prototype myUnshift
+
+// Array.prototype.myUnshift = function (...parameter) {
+//   for (let i = this.length - 1; i >= 0; i--) {
+//     this[i + parameter.length] = this[i];
+//   }
+//   for (let j = 0; j <= parameter.length - 1; j++) {
+//     this[j] = parameter[j];
+//   }
+//   return this.length;
+// };
+
+// let arr = [2, 5, 6];
+// arr.myUnshift(10, 5);
+// console.log(arr);
