@@ -113,16 +113,60 @@
 // Q. change the price in dollors in euros
 // (assume 1 dollor= 0.85 euros)
 
-const priceConversion = (arr) => {
-  let newPrice = [];
-  let euros = 0.85;
-  let convertedPrice = 0;
-  for (let i = 0; i <= arr.length - 1; i++) {
-    convertedPrice = arr[i] * euros;
-    newPrice.push(convertedPrice);
-  }
-  return newPrice;
-};
-let priceIn$ = [150, 120, 90, 17, 31];
-let result = priceConversion(priceIn$);
-console.log(result);
+// const priceConversion = (arr) => {
+//   let newPrice = [];
+//   let euros = 0.85;
+//   let convertedPrice = 0;
+//   for (let i = 0; i <= arr.length - 1; i++) {
+//     convertedPrice = arr[i] * euros;
+//     newPrice.push(convertedPrice);
+//   }
+//   return newPrice;
+// };
+// let priceIn$ = [150, 120, 90, 17, 30];
+// let result = priceConversion(priceIn$);
+// console.log(result);
+
+// map//
+
+// let $ = 1;
+// let euros = 0.85;
+// let prices$ = [10, 20, 30, 40];
+// let convertedPrice = prices$.map((ele) => ele * euros);
+// console.log(convertedPrice);
+
+// Q. Write a function that takes an array of strings and returns a new array
+// with all the strings converted to uppercase.
+
+// const upperCaseString = (arr) => {
+//   let newArr = [];
+//   for (let i = 0; i <= arr.length - 1; i++) {
+//     let element = arr[i];
+//     let upperCasedString = element.toUpperCase();
+//     newArr.push(upperCasedString);
+//   }
+//   return newArr;
+// };
+// let places = ["waling", "jimuha", "kathmandu", "mirmi"];
+// let result = upperCaseString(places);
+// console.log(result);
+
+// for of //
+
+// const upperCaseString = (arr) => {
+//   let capitalStrings = [];
+//   for (let str of arr) {
+//     let upperCasedString = str.toUpperCase();
+//     capitalStrings.push(upperCasedString);
+//   }
+//   return capitalStrings;
+// };
+// let places = ["Waling", "Jimuha", "Kathmandu", "Mirmi"];
+// let result = upperCaseString(places);
+// console.log(result);
+
+// map //
+
+// let places = ["Waling", "Jimuha", "Kathmandu", "Mirmi"];
+// let upperCasedString = places.map((str) => str.toUpperCase());
+// console.log(upperCasedString);
