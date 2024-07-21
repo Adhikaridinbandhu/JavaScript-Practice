@@ -71,3 +71,58 @@
 // let names = ["Bipin", "Bandhu", "Shiva", "Lekhnath"];
 // let lengthOfstring = names.map((name) => name.length);
 // console.log(lengthOfstring);
+
+// Q. Write a function that takes an array of numbers and returns a new array where each
+// element is doubled.
+
+// const doubleArray = (arr) => {
+//   let doubledArray = [];
+//   let value = 0;
+//   for (let i = 0; i <= arr.length - 1; i++) {
+//     value = arr[i] * 2;
+//     doubledArray.push(value);
+//   }
+//   return doubledArray;
+// };
+// let numbers = [2, 3, 5, 7, 8];
+// let output = doubleArray(numbers);
+// console.log(output);
+
+// for of//
+
+// const doubleArray = (arr) => {
+//   let element = 0;
+//   let newArr = [];
+//   for (let ele of arr) {
+//     element = ele * 2;
+//     newArr.push(element);
+//   }
+//   return newArr;
+// };
+// let numbers = [2, 3, 5, 7, 8];
+// let output = doubleArray(numbers);
+// console.log(output);
+
+// map//
+
+// let numbers = [2, 3, 5, 7, 8];
+// let doubledArray = numbers.map((ele) => ele * 2);
+// let result = doubledArray;
+// console.log(result);
+
+// Q. change the price in dollors in euros
+// (assume 1 dollor= 0.85 euros)
+
+const priceConversion = (arr) => {
+  let newPrice = [];
+  let euros = 0.85;
+  let convertedPrice = 0;
+  for (let i = 0; i <= arr.length - 1; i++) {
+    convertedPrice = arr[i] * euros;
+    newPrice.push(convertedPrice);
+  }
+  return newPrice;
+};
+let priceIn$ = [150, 120, 90, 17, 31];
+let result = priceConversion(priceIn$);
+console.log(result);
