@@ -241,3 +241,22 @@
 // let arr = [2, 5, 6];
 // arr.myUnshift(10, 5);
 // console.log(arr);
+
+const isPrime = (arr) => {
+  let newArr = [];
+  for (let i = 0; i <= arr.length - 1; i++) {
+    console.log(arr[i]);
+    for (let j = 2; j <= Math.sqrt(arr[i]); j++) {
+      if (arr[i] <= 1) {
+        return false;
+      } else if (arr[i] % j === 0) {
+        return false;
+      }
+    }
+  }
+  newArr.push(arr[i]);
+  return newArr;
+};
+let numbers = [1, 2, 3];
+let result = isPrime(numbers);
+console.log(result);
