@@ -170,3 +170,27 @@
 // let places = ["Waling", "Jimuha", "Kathmandu", "Mirmi"];
 // let upperCasedString = places.map((str) => str.toUpperCase());
 // console.log(upperCasedString);
+
+// Q. Write a function that takes an array of numbers and return a new
+// array  with each number increased by 5.
+
+// map//
+
+// let numbers = [2, 3, 5, 8, 11, 6];
+// let increasedNumbers = numbers.map((num) => num + 5);
+// console.log(increasedNumbers);
+
+// for of //
+
+const increaseNum = (arr) => {
+  let increasedNumbers = [];
+  let newNum = 0;
+  for (let num of arr) {
+    newNum = num + 5;
+    increasedNumbers.push(newNum);
+  }
+  return increasedNumbers;
+};
+let numbers = [2, 9, 5, 8, 11, 6];
+let resultArr = increaseNum(numbers);
+console.log(resultArr);
