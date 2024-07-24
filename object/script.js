@@ -330,18 +330,32 @@
 //    innovations such as the ${data[3].Technology.innovations[0].name} ${data[3].Technology.innovations[0].type} covering ${data[3].Technology.innovations[0].coverage}.`
 // );
 
-const carModels = {
-  name: "Tesla",
-  color: "Red",
-  speed: "300KM/hr",
-  music: "yes",
-  fourwheels: "yes",
-  seat: "five",
-  airCondition: "yes",
-  electric: "yes",
-};
-carModels.automode = "yes";
-delete music;
-for (let key in carModels) {
-  console.log(key + ":" + carModels[key]);
-}
+// const carModels = {
+//   name: "Tesla",
+//   color: "Red",
+//   speed: "300KM/hr",
+//   music: "yes",
+//   fourwheels: "yes",
+//   seat: "five",
+//   airCondition: "yes",
+//   electric: "yes",
+// };
+// carModels.automode = "yes";
+// delete music;
+// for (let key in carModels) {
+//   console.log(key + ":" + carModels[key]);
+// }
+
+// const student = {
+//   name: "Bipin",
+//   class: "Twelve",
+//   address: "syangja",
+//   location: "kupandol",
+//   collegeBus: "No",
+// };
+// student.shift = "morning";
+// student.address = "jimuha";
+// delete student.collegeBus;
+// for (let key in student) {
+//   console.log(key + ":" + student[key]);
+// }
