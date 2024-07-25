@@ -277,3 +277,56 @@
 //   return str.charAt(0).toUpperCase() + str.slice(1);
 // });
 // console.log(upperCasedStr);
+
+let girls = [
+  {
+    name: "Bindu",
+    age: 21,
+  },
+  {
+    name: "Sristi",
+    age: 14,
+  },
+  {
+    name: "Srijana",
+    age: 24,
+  },
+  {
+    name: "Maya",
+    age: 27,
+  },
+  {
+    name: "Kala",
+    age: 32,
+  },
+  {
+    name: "Devi",
+    age: 34,
+  },
+];
+// let findAge = girls.map(function (ele) {
+//   return ele.age;
+// });
+// console.log(findAge);
+
+// for (let key in girls) {
+//   console.log(girls[key].name);
+// }
+
+// const person = {
+//   firstName: "Bandhu",
+//   lastName: "Adhikari",
+//   age: 32,
+//   height: "5.10 inch",
+//   fullName: function () {
+//     return this.firstName + " " + this.lastName;
+//   },
+// };
+// // for (let key in person) {
+// //   console.log(key + ":" + person[key]);
+// // }
+// console.log(person.fullName().toUpperCase());
+
+let buses = ["volva", "tata", "ashok layland", "eicher"];
+let newArr = buses.map((val) => val.charAt(0).toUpperCase() + val.slice(1));
+console.log(newArr);

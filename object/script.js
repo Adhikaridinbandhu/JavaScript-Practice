@@ -364,14 +364,14 @@ const car = {
   name: "tesla",
   year: 2020,
   model: "vintage 2020",
-  displayDetails() {
-    console.log(
-      `Car Details: ${this.name} ${this.model} is made in ${this.year}`
-    );
-  },
+  // displayDetails() {
+  //   console.log(
+  //     `Car Details: ${this.name} ${this.model} is made in ${this.year}`
+  //   );
+  // },
 };
 car.colour = "red";
-car.displayDetails();
+// car.displayDetails();
 for (let key in car) {
   console.log(key + ":" + car[key]);
 }
