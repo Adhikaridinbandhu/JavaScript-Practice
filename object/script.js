@@ -353,9 +353,25 @@
 //   location: "kupandol",
 //   collegeBus: "No",
 // };
-// student.shift = "morning";
+// student .shift = "morning";
 // student.address = "jimuha";
 // delete student.collegeBus;
 // for (let key in student) {
 //   console.log(key + ":" + student[key]);
 // }
+
+const car = {
+  name: "tesla",
+  year: 2020,
+  model: "vintage 2020",
+  displayDetails() {
+    console.log(
+      `Car Details: ${this.name} ${this.model} is made in ${this.year}`
+    );
+  },
+};
+car.colour = "red";
+car.displayDetails();
+for (let key in car) {
+  console.log(key + ":" + car[key]);
+}

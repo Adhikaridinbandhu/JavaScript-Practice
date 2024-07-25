@@ -232,3 +232,42 @@
 
 // let result = sumTwoNumbers(5, 4);
 // console.log(result);
+
+// let numbers = [2, 4, 6, 8, 10];
+// const removeNum = (arr) => {
+//   let removed = arr.pop();
+//   console.log(removed);
+// };
+// removeNum(numbers);
+// console.log(numbers);
+
+// const removeEle = (arr) => {
+//   let removedEle = arr.shift();
+//   return arr;
+//   console.log(removedEle);
+// };
+// let names = ["anil", "dhurba", "rahul", "janak"];
+// let result = removeEle(names);
+// console.log(result);
+
+// const removeEle = (arr) => {
+//   arr.shift();
+//   console.log(arr);
+// };
+// let names = ["anil", "dhurba", "rahul", "janak"];
+// removeEle(names);
+
+// removeEle([15, 25, 35, 45]);
+
+// let places = ["Kathmandu", "Dharan", "Chitwan", "Shurkhet", "Hetauda"];
+// const removeEle = (arr) => {
+//   let removedEle = arr.splice(1, 1);
+//   console.log(removedEle);
+//   return arr;
+// };
+// let result = removeEle(places);
+// console.log(result);
+
+let fruits = ["apple", "banana", "orange", "papaya", "cherry"];
+let removedEle = fruits.slice(2, 4);
+console.log(removedEle);
