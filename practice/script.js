@@ -327,6 +327,6 @@ let girls = [
 // // }
 // console.log(person.fullName().toUpperCase());
 
-let buses = ["volva", "tata", "ashok layland", "eicher"];
-let newArr = buses.map((val) => val.charAt(0).toUpperCase() + val.slice(1));
-console.log(newArr);
+// let buses = ["volva", "tata", "ashok layland", "eicher"];
+// let newArr = buses.map((val) => val.charAt(0).toUpperCase() + val.slice(1));
+// console.log(newArr);
