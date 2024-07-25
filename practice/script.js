@@ -268,6 +268,12 @@
 // let result = removeEle(places);
 // console.log(result);
 
-let fruits = ["apple", "banana", "orange", "papaya", "cherry"];
-let removedEle = fruits.slice(2, 4);
-console.log(removedEle);
+// let fruits = ["apple", "banana", "orange", "papaya", "cherry"];
+// let removedEle = fruits.slice(2, 4);
+// console.log(removedEle);
+
+// let nouns = ["man", "cow", "people", "police"];
+// let upperCasedStr = nouns.map(function (str) {
+//   return str.charAt(0).toUpperCase() + str.slice(1);
+// });
+// console.log(upperCasedStr);
