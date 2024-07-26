@@ -360,18 +360,61 @@
 //   console.log(key + ":" + student[key]);
 // }
 
-const car = {
-  name: "tesla",
-  year: 2020,
-  model: "vintage 2020",
-  // displayDetails() {
-  //   console.log(
-  //     `Car Details: ${this.name} ${this.model} is made in ${this.year}`
-  //   );
-  // },
-};
-car.colour = "red";
-// car.displayDetails();
-for (let key in car) {
-  console.log(key + ":" + car[key]);
-}
+// const car = {
+//   name: "tesla",
+//   year: 2020,
+//   model: "vintage 2020",
+//   // displayDetails() {
+//   //   console.log(
+//   //     `Car Details: ${this.name} ${this.model} is made in ${this.year}`
+//   //   );
+//   // },
+// };
+// car.colour = "red";
+// // car.displayDetails();
+// for (let key in car) {
+//   console.log(key + ":" + car[key]);
+// }
+
+let info = [
+  {
+    name: "bichin",
+    class: 12,
+    age: 22,
+  },
+  {
+    name: "byandu",
+    class: 16,
+    age: 32,
+  },
+  {
+    name: "yadau",
+    class: 14,
+    age: 30,
+  },
+  {
+    name: "lukas",
+    class: 13,
+    age: 24,
+  },
+  {
+    name: "bimli",
+    class: 12,
+    age: 26,
+  },
+];
+// let ageInfo = info.map(function (ele) {
+//   {
+//     myName = ele.name;
+//   }
+//   return myName;
+// });
+// let result = ageInfo;
+// console.log(result);
+
+const nameInfo = info.map(function (ele) {
+  {
+    return (myName = ele.name);
+  }
+});
+console.log(nameInfo);
