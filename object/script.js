@@ -429,38 +429,92 @@
 
 // anagram //
 
-const anagram = (str1, str2) => {
-  if (str1.length != str2.length) {
-    return false;
+// const anagram = (str1, str2) => {
+//   if (str1.length !== str2.length) {
+//     return false;
+//   }
+//   let count = {};
+//   for (let char of str1) {
+//     if (count[char]) {
+//       count[char]++;
+//     } else {
+//       count[char] = 1;
+//     }
+//   }
+//   for (let char of str2) {
+//     if (count[char]) {
+//       count[char]--;
+//     } else {
+//       return false;
+//     }
+//   }
+//   for (let key in count) {
+//     if (count[key] !== 0) {
+//       return false;
+//     } else {
+//       return true;
+//     }
+//   }
+// };
+// let word1 = "theeyes";
+// let word2 = "theysee";
+// let result = anagram(word1, word2);
+// if (result) {
+//   console.log("Anagrams");
+// } else {
+//   console.log("Not Anagrams");
+// }
+
+// function areAnagrams(str1, str2) {
+//   function buildCharCount(str) {
+//     const charCount = {};
+//     for (let char of str.replace(/[^\w]/g, "").toLowerCase()) {
+//       charCount[char] = charCount[char] + 1 || 1;
+//     }
+//     return charCount;
+//   }
+//   const charCount1 = buildCharCount(str1);
+//   const charCount2 = buildCharCount(str2);
+//   if (Object.keys(charCount1).length !== Object.keys(charCount2).length) {
+//     return false;
+//   }
+//   for (let char in charCount1) {
+//     if (charCount1[char] !== charCount2[char]) {
+//       return false;
+//     }
+//   }
+
+//   return true;
+// }
+// console.log(areAnagrams("Dormitory", "Dirty room"));
+
+// let word1 = "TheEyes";
+// let word2 = "TheySee";
+// const sortStr = (str1, str2) => {
+//   let sortedStr1 = str1.toLowerCase().split("").sort().join("");
+//   let sortedStr2 = str2.toLowerCase().split("").sort().join("");
+//   return sortedStr1 == sortedStr2;
+// };
+// let isAnagram = sortStr(word1, word2);
+// if (isAnagram) {
+//   console.log("The given strings are anagrams");
+// } else {
+//   console.log("The given strings are not anagrams");
+// }
+
+let word1 = "TheEyes";
+let word2 = "TheySee";
+const checkAnagram = (str1, str2) => {
+  function sortString(str) {
+    return str.toLowerCase().split("").sort().join("");
   }
-  let count = {};
-  for (let char of str1) {
-    if (count[char]) {
-      count[char]++;
-    } else {
-      count[char] = 1;
-    }
-  }
-  for (let char of str2) {
-    if (count[char]) {
-      count[char]--;
-    } else {
-      return false;
-    }
-  }
-  for (let key in count) {
-    if (count[key] != 0) {
-      return false;
-    } else {
-      return true;
-    }
-  }
+  let sortedStr1 = sortString(str1);
+  let sortedStr2 = sortString(str2);
+  return sortedStr1 == sortedStr2;
 };
-let word1 = "theeyes";
-let word2 = "theysee";
-let result = anagram(word1, word2);
-if (result) {
-  console.log("these are anagrams");
+let isAnagram = checkAnagram(word1, word2);
+if (isAnagram) {
+  console.log("The given strings are anagrams");
 } else {
-  console.log("these aren't anagrams");
+  console.log("The given strings are not anagrams");
 }
