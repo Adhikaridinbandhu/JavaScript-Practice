@@ -376,45 +376,91 @@
 //   console.log(key + ":" + car[key]);
 // }
 
-let info = [
-  {
-    name: "bichin",
-    class: 12,
-    age: 22,
-  },
-  {
-    name: "byandu",
-    class: 16,
-    age: 32,
-  },
-  {
-    name: "yadau",
-    class: 14,
-    age: 30,
-  },
-  {
-    name: "lukas",
-    class: 13,
-    age: 24,
-  },
-  {
-    name: "bimli",
-    class: 12,
-    age: 26,
-  },
-];
-// let ageInfo = info.map(function (ele) {
+// let info = [
 //   {
-//     myName = ele.name;
-//   }
-//   return myName;
+//     name: "bichin",
+//     class: 12,
+//     age: 22,
+//     subject: "computer",
+//   },
+//   {
+//     name: "byandu",
+//     class: 16,
+//     age: 32,
+//     subject: "english",
+//   },
+//   {
+//     name: "yadau",
+//     class: 14,
+//     age: 30,
+//     subject: "commerce",
+//   },
+//   {
+//     name: "lukas",
+//     class: 13,
+//     age: 24,
+//     subject: "videography",
+//   },
+//   {
+//     name: "bimli",
+//     class: 12,
+//     age: 26,
+//     subject: "commerce",
+//   },
+// ];
+// let information = info.map(function (ele) {
+//   return {
+//     myName: ele.name,
+//     mySubject: "Nepalese",
+//   };
 // });
-// let result = ageInfo;
-// console.log(result);
+// console.log(information);
 
-const nameInfo = info.map(function (ele) {
-  {
-    return (myName = ele.name);
+// // const nameInfo = info.map(function (ele) {
+// //   return {
+// //     myName: ele.name,
+// //     myAge: ele.age,
+// //   };
+// // });
+// // console.log(nameInfo);
+
+// let commerceStudents = info.filter((ele) => ele.subject === "commerce");
+// console.log(commerceStudents);
+
+// anagram //
+
+const anagram = (str1, str2) => {
+  if (str1.length != str2.length) {
+    return false;
   }
-});
-console.log(nameInfo);
+  let count = {};
+  for (let char of str1) {
+    if (count[char]) {
+      count[char]++;
+    } else {
+      count[char] = 1;
+    }
+  }
+  for (let char of str2) {
+    if (count[char]) {
+      count[char]--;
+    } else {
+      return false;
+    }
+  }
+  for (let key in count) {
+    if (count[key] != 0) {
+      return false;
+    } else {
+      return true;
+    }
+  }
+};
+let word1 = "theeyes";
+let word2 = "theysee";
+let result = anagram(word1, word2);
+if (result) {
+  console.log("these are anagrams");
+} else {
+  console.log("these aren't anagrams");
+}
