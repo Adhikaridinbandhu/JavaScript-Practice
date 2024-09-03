@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ddd;
+  font-family: sans-serif;
+}
+.card-wrapper {
+  margin: 20px 20px;
+  flex-wrap: wrap;
+}

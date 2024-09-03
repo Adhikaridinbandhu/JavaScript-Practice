@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ddd;
+  max-width: 100%;
+  margin-top: 20px;
+}
+.card-container {
+  margin-left: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.details-container {
+  list-style: none;
+}
