@@ -112,11 +112,17 @@
 // }
 // printVowels("AEROPLANE");
 
-function printOddNum(num) {
-  for (let i = 0; i <= num; i++) {
-    if (i % 2 !== 0) {
-      console.log(i);
-    }
-  }
+// function printOddNum(num) {
+//   for (let i = 0; i <= num; i++) {
+//     if (i % 2 !== 0) {
+//       console.log(i);
+//     }
+//   }
+// }
+// printOddNum(12);
+
+function sum(a, b) {
+  return a + b;
 }
-printOddNum(12);
+let result = sum(4, 5);
+console.log(result);
