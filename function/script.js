@@ -121,8 +121,14 @@
 // }
 // printOddNum(12);
 
-function sum(a, b) {
-  return a + b;
+// function sum(a, b) {
+//   return a + b;
+// }
+// let result = sum(4, 5);
+// console.log(result);
+
+function reverseName(name) {
+  let newArray = name.split("").reverse().join("");
+  console.log(newArray);
 }
-let result = sum(4, 5);
-console.log(result);
+reverseName("bandhu");
