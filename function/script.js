@@ -132,3 +132,4 @@ function reverseName(name) {
   console.log(newArray);
 }
 reverseName("bandhu");
+reverseName("i am not a toy");
