@@ -1,0 +1,45 @@
+# Node modules directory
+node_modules/
+
+# Lock files
+package-lock.json
+yarn.lock
+
+# Environment variables
+.env
+.env.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Cache and build directories
+.cache/
+dist/
+build/
+
+# Nodemon (development tool) specific files
+.pids
+
+# IDE/editor-specific settings
+.idea/
+.vscode/
+*.sublime-workspace
+
+# Optional npm cache directory
+.npm/
+
+# Coverage directory (for testing)
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Optional ESLint cache
+.eslintcache

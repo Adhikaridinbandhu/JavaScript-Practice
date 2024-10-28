@@ -182,15 +182,15 @@
 
 // for of //
 
-const increaseNum = (arr) => {
-  let increasedNumbers = [];
-  let newNum = 0;
-  for (let num of arr) {
-    newNum = num + 5;
-    increasedNumbers.push(newNum);
-  }
-  return increasedNumbers;
-};
-let numbers = [2, 9, 5, 8, 11, 6];
-let resultArr = increaseNum(numbers);
-console.log(resultArr);
+// const increaseNum = (arr) => {
+//   let increasedNumbers = [];
+//   let newNum = 0;
+//   for (let num of arr) {
+//     newNum = num + 5;
+//     increasedNumbers.push(newNum);
+//   }
+//   return increasedNumbers;
+// };
+// let numbers = [2, 9, 5, 8, 11, 6];
+// let resultArr = increaseNum(numbers);
+// console.log(resultArr);  
